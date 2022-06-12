@@ -30,4 +30,4 @@ jobs:
     - name: Test
       run: |
         cd ./flaskapp
-        python3 some_app.py
+        sh ./st.sh
