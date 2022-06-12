@@ -31,5 +31,4 @@ jobs:
     - name: Test
       run: |
         cd ./flaskapp
-        pip3 install flask
         python3 some_app.py
