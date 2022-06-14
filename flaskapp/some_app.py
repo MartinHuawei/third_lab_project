@@ -46,6 +46,7 @@ def net():
     neurodic = {}
     if form.validate_on_submit():
         filename = os.path.join('./static', secure_filename(form.upload.data.filename))
+        print(filename)
         fcount, fimage = neuronet.read_image_files(10,'./static')
         decode = neuronet.getresult(fimage)
         for elem in decode:
